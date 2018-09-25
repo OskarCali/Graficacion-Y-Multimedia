@@ -90,5 +90,30 @@ namespace PracticaDB_GrafMult
                     MessageBoxIcon.Error);
             }
         }
+
+        private void buttonActualizar_Click(object sender, EventArgs e)
+        {
+            if (textBoxNombre.Text != "" && textBoxApellido.Text != "" && textBoxEdad.Text != "")
+            {
+                if (MessageBox.Show("Va a actualiza la edad de " + textBoxNombre.Text + " " + textBoxApellido.Text + "\n\t¿Seguro que desea actualizar?", "ELIMINAR", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    if (DataBase.Actualizar(textBoxNombre.Text, textBoxApellido.Text, Convert.ToInt32(textBoxEdad.Text)) == 0)
+                    {
+                        MessageBox.Show("No se pudo actualizar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        personaDataGridView.DataSource = DataBase.Cargar();
+                        MessageBox.Show("Actualizado correctamente", "ACTUALIZAR", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Todos los campos deben de estar llenos", "ERROR", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
     }
 }

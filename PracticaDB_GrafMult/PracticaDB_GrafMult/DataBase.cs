@@ -104,6 +104,20 @@ namespace PracticaDB_GrafMult
 
             return res;
         }
+
+        public static int Actualizar(string nombre, string apellido, int edad)
+        {
+            int res = 0;
+            MySqlCommand command = new MySqlCommand();
+
+            command.CommandText = "UPDATE persona SET edad='" + edad + "' WHERE nombre='" + nombre +
+                                  "' AND apellido='" + apellido + "';";
+            command.Connection = Connection();
+
+            res = command.ExecuteNonQuery();
+
+            return res;
+        }
     }
 
     class Persona

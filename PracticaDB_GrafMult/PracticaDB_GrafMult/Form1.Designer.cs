@@ -40,12 +40,13 @@
             this.labelApellido = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
             this.personaDataGridView = new System.Windows.Forms.DataGridView();
+            this.buttonEliminar = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonActualizar = new System.Windows.Forms.Button();
             this.groupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.personaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaBindingSource)).BeginInit();
@@ -64,6 +65,7 @@
             // 
             // groupBoxDatos
             // 
+            this.groupBoxDatos.Controls.Add(this.buttonActualizar);
             this.groupBoxDatos.Controls.Add(this.buttonEliminar);
             this.groupBoxDatos.Controls.Add(this.buttonBuscar);
             this.groupBoxDatos.Controls.Add(this.buttonAgregar);
@@ -169,6 +171,16 @@
             this.personaDataGridView.Size = new System.Drawing.Size(583, 456);
             this.personaDataGridView.TabIndex = 2;
             // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.Location = new System.Drawing.Point(135, 207);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(95, 34);
+            this.buttonEliminar.TabIndex = 8;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
@@ -201,15 +213,15 @@
             // 
             this.personaBindingSource.DataSource = typeof(PracticaDB_GrafMult.Persona);
             // 
-            // buttonEliminar
+            // buttonActualizar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(135, 207);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(95, 34);
-            this.buttonEliminar.TabIndex = 8;
-            this.buttonEliminar.Text = "Eliminar";
-            this.buttonEliminar.UseVisualStyleBackColor = true;
-            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
+            this.buttonActualizar.Location = new System.Drawing.Point(135, 257);
+            this.buttonActualizar.Name = "buttonActualizar";
+            this.buttonActualizar.Size = new System.Drawing.Size(95, 34);
+            this.buttonActualizar.TabIndex = 9;
+            this.buttonActualizar.Text = "Actualizar";
+            this.buttonActualizar.UseVisualStyleBackColor = true;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
             // 
             // Form
             // 
@@ -249,6 +261,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button buttonActualizar;
     }
 }
 
