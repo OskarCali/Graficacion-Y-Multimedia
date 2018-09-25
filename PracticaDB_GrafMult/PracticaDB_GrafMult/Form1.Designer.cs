@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.groupBoxDatos = new System.Windows.Forms.GroupBox();
-            this.labelNombre = new System.Windows.Forms.Label();
-            this.labelApellido = new System.Windows.Forms.Label();
-            this.labelEdad = new System.Windows.Forms.Label();
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.textBoxApellido = new System.Windows.Forms.TextBox();
-            this.textBoxEdad = new System.Windows.Forms.TextBox();
-            this.personaDataGridView = new System.Windows.Forms.DataGridView();
+            this.buttonBuscar = new System.Windows.Forms.Button();
             this.buttonAgregar = new System.Windows.Forms.Button();
+            this.textBoxEdad = new System.Windows.Forms.TextBox();
+            this.textBoxApellido = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.labelEdad = new System.Windows.Forms.Label();
+            this.labelApellido = new System.Windows.Forms.Label();
+            this.labelNombre = new System.Windows.Forms.Label();
+            this.personaDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,16 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.personaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(66, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Test Connection";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelTitulo
             // 
@@ -73,11 +63,11 @@
             // 
             // groupBoxDatos
             // 
+            this.groupBoxDatos.Controls.Add(this.buttonBuscar);
             this.groupBoxDatos.Controls.Add(this.buttonAgregar);
             this.groupBoxDatos.Controls.Add(this.textBoxEdad);
             this.groupBoxDatos.Controls.Add(this.textBoxApellido);
             this.groupBoxDatos.Controls.Add(this.textBoxNombre);
-            this.groupBoxDatos.Controls.Add(this.button1);
             this.groupBoxDatos.Controls.Add(this.labelEdad);
             this.groupBoxDatos.Controls.Add(this.labelApellido);
             this.groupBoxDatos.Controls.Add(this.labelNombre);
@@ -88,23 +78,46 @@
             this.groupBoxDatos.TabIndex = 2;
             this.groupBoxDatos.TabStop = false;
             // 
-            // labelNombre
+            // buttonBuscar
             // 
-            this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(13, 39);
-            this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(62, 17);
-            this.labelNombre.TabIndex = 0;
-            this.labelNombre.Text = "Nombre:";
+            this.buttonBuscar.Location = new System.Drawing.Point(16, 257);
+            this.buttonBuscar.Name = "buttonBuscar";
+            this.buttonBuscar.Size = new System.Drawing.Size(95, 34);
+            this.buttonBuscar.TabIndex = 7;
+            this.buttonBuscar.Text = "Buscar";
+            this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
-            // labelApellido
+            // buttonAgregar
             // 
-            this.labelApellido.AutoSize = true;
-            this.labelApellido.Location = new System.Drawing.Point(13, 77);
-            this.labelApellido.Name = "labelApellido";
-            this.labelApellido.Size = new System.Drawing.Size(62, 17);
-            this.labelApellido.TabIndex = 1;
-            this.labelApellido.Text = "Apellido:";
+            this.buttonAgregar.Location = new System.Drawing.Point(16, 207);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(95, 34);
+            this.buttonAgregar.TabIndex = 6;
+            this.buttonAgregar.Text = "Agregar";
+            this.buttonAgregar.UseVisualStyleBackColor = true;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
+            // 
+            // textBoxEdad
+            // 
+            this.textBoxEdad.Location = new System.Drawing.Point(82, 116);
+            this.textBoxEdad.Name = "textBoxEdad";
+            this.textBoxEdad.Size = new System.Drawing.Size(135, 22);
+            this.textBoxEdad.TabIndex = 5;
+            // 
+            // textBoxApellido
+            // 
+            this.textBoxApellido.Location = new System.Drawing.Point(82, 74);
+            this.textBoxApellido.Name = "textBoxApellido";
+            this.textBoxApellido.Size = new System.Drawing.Size(135, 22);
+            this.textBoxApellido.TabIndex = 4;
+            // 
+            // textBoxNombre
+            // 
+            this.textBoxNombre.Location = new System.Drawing.Point(82, 36);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(135, 22);
+            this.textBoxNombre.TabIndex = 3;
             // 
             // labelEdad
             // 
@@ -115,26 +128,23 @@
             this.labelEdad.TabIndex = 2;
             this.labelEdad.Text = "Edad:";
             // 
-            // textBoxNombre
+            // labelApellido
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(82, 36);
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(135, 22);
-            this.textBoxNombre.TabIndex = 3;
+            this.labelApellido.AutoSize = true;
+            this.labelApellido.Location = new System.Drawing.Point(13, 77);
+            this.labelApellido.Name = "labelApellido";
+            this.labelApellido.Size = new System.Drawing.Size(62, 17);
+            this.labelApellido.TabIndex = 1;
+            this.labelApellido.Text = "Apellido:";
             // 
-            // textBoxApellido
+            // labelNombre
             // 
-            this.textBoxApellido.Location = new System.Drawing.Point(82, 74);
-            this.textBoxApellido.Name = "textBoxApellido";
-            this.textBoxApellido.Size = new System.Drawing.Size(135, 22);
-            this.textBoxApellido.TabIndex = 4;
-            // 
-            // textBoxEdad
-            // 
-            this.textBoxEdad.Location = new System.Drawing.Point(82, 116);
-            this.textBoxEdad.Name = "textBoxEdad";
-            this.textBoxEdad.Size = new System.Drawing.Size(135, 22);
-            this.textBoxEdad.TabIndex = 5;
+            this.labelNombre.AutoSize = true;
+            this.labelNombre.Location = new System.Drawing.Point(13, 39);
+            this.labelNombre.Name = "labelNombre";
+            this.labelNombre.Size = new System.Drawing.Size(62, 17);
+            this.labelNombre.TabIndex = 0;
+            this.labelNombre.Text = "Nombre:";
             // 
             // personaDataGridView
             // 
@@ -156,16 +166,6 @@
             this.personaDataGridView.RowTemplate.Height = 24;
             this.personaDataGridView.Size = new System.Drawing.Size(583, 456);
             this.personaDataGridView.TabIndex = 2;
-            // 
-            // buttonAgregar
-            // 
-            this.buttonAgregar.Location = new System.Drawing.Point(16, 207);
-            this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(95, 34);
-            this.buttonAgregar.TabIndex = 6;
-            this.buttonAgregar.Text = "Agregar";
-            this.buttonAgregar.UseVisualStyleBackColor = true;
-            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -220,8 +220,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelTitulo;
         private System.Windows.Forms.GroupBox groupBoxDatos;
         private System.Windows.Forms.TextBox textBoxEdad;
@@ -237,6 +235,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.Button buttonBuscar;
     }
 }
 

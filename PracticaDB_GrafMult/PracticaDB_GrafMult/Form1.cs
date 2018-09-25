@@ -12,6 +12,7 @@ namespace PracticaDB_GrafMult
 {
     public partial class Form : System.Windows.Forms.Form
     {
+
         public Form()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace PracticaDB_GrafMult
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            personaDataGridView.DataSource = personaBindingSource;
+            personaDataGridView.DataSource = DataBase.Cargar();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,8 +48,16 @@ namespace PracticaDB_GrafMult
             }
             else
             {
+                personaDataGridView.DataSource = DataBase.Cargar();
                 MessageBox.Show("Agregado correctamente", "AGREGAR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+            personaDataGridView.DataSource = DataBase.Cargar();
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            personaDataGridView.DataSource = DataBase.Buscar(Convert.ToInt32(textBoxEdad.Text));
         }
     }
 }

@@ -36,11 +36,61 @@ namespace PracticaDB_GrafMult
             command.CommandText =
                 "INSERT INTO persona (nombre, apellido, edad) values ('" + persona.nombre + "', '" + persona.apellido +
                 "', " + persona.edad + ");";
-
             command.Connection = Connection();
+
             res = command.ExecuteNonQuery();
+
             return res;
         }
+
+        public static List<Persona> Cargar()
+        {
+            List<Persona> personas = new List<Persona>();
+            MySqlCommand command = new MySqlCommand();
+
+            command.CommandText = "SELECT * FROM persona;";
+            command.Connection = Connection();
+
+            MySqlDataReader personasReader = command.ExecuteReader();
+
+            while (personasReader.Read())
+            {
+                Persona nuevaPersona = new Persona();
+                nuevaPersona.id = personasReader.GetInt32(0);
+                nuevaPersona.nombre = personasReader.GetString(1);
+                nuevaPersona.apellido = personasReader.GetString(2);
+                nuevaPersona.edad = personasReader.GetInt32(3);
+
+                personas.Add(nuevaPersona);
+            }
+
+            return personas;
+        }
+
+        public static List<Persona> Buscar(int edad)
+        {
+            List<Persona> personas = new List<Persona>();
+            MySqlCommand command = new MySqlCommand();
+
+            command.CommandText = "SELECT * FROM persona WHERE edad >= '" + edad + "';";
+            command.Connection = Connection();
+
+            MySqlDataReader personasReader = command.ExecuteReader();
+
+            while (personasReader.Read())
+            {
+                Persona nuevaPersona = new Persona();
+                nuevaPersona.id = personasReader.GetInt32(0);
+                nuevaPersona.nombre = personasReader.GetString(1);
+                nuevaPersona.apellido = personasReader.GetString(2);
+                nuevaPersona.edad = personasReader.GetInt32(3);
+
+                personas.Add(nuevaPersona);
+            }
+
+            return personas;
+        }
+
     }
 
     class Persona
