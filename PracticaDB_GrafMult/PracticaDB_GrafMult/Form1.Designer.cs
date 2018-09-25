@@ -45,6 +45,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonEliminar = new System.Windows.Forms.Button();
             this.groupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.personaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaBindingSource)).BeginInit();
@@ -63,6 +64,7 @@
             // 
             // groupBoxDatos
             // 
+            this.groupBoxDatos.Controls.Add(this.buttonEliminar);
             this.groupBoxDatos.Controls.Add(this.buttonBuscar);
             this.groupBoxDatos.Controls.Add(this.buttonAgregar);
             this.groupBoxDatos.Controls.Add(this.textBoxEdad);
@@ -199,6 +201,16 @@
             // 
             this.personaBindingSource.DataSource = typeof(PracticaDB_GrafMult.Persona);
             // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.Location = new System.Drawing.Point(135, 207);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(95, 34);
+            this.buttonEliminar.TabIndex = 8;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -236,6 +248,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button buttonBuscar;
+        private System.Windows.Forms.Button buttonEliminar;
     }
 }
 

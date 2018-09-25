@@ -28,7 +28,7 @@ namespace PracticaDB_GrafMult
             return connex;
         }
 
-        public static int agregar(Persona persona)
+        public static int Agregar(Persona persona)
         {
             int res = 0;
             MySqlCommand command = new MySqlCommand();
@@ -91,6 +91,19 @@ namespace PracticaDB_GrafMult
             return personas;
         }
 
+        public static int Eliminar(string nombre, string apellido, int edad)
+        {
+            int res = 0;
+            MySqlCommand command = new MySqlCommand();
+
+            command.CommandText = "DELETE FROM persona WHERE nombre='" + nombre + "' AND apellido='" + apellido +
+                                  "' AND edad=" + edad + ";";
+            command.Connection = Connection();
+
+            res = command.ExecuteNonQuery();
+
+            return res;
+        }
     }
 
     class Persona
