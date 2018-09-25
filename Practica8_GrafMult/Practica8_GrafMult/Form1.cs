@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Practica8_GrafMult
 {
-    public partial class Form : System.Windows.Forms.Form
+    public partial class FormInicio : System.Windows.Forms.Form
     {
-        public Form()
+        public FormInicio()
         {
             InitializeComponent();
         }
