@@ -10,7 +10,8 @@ Usando VS 2017 Community :purple_heart:
 *	SoundPlayer
 *	Windows Media Player
 *	Seleccion de Video (WMP)
+*	Seleccion de PFD (Acrobat Reader)
 
 ---
-> *Realizado por OskarCali :octocat:*  
+> _Realizado por **OskarCali** :octocat:_  
 > Maestra: Diana Xochitl Ruano Vargas
