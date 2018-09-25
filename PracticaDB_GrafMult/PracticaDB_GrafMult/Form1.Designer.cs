@@ -41,12 +41,13 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.personaDataGridView = new System.Windows.Forms.DataGridView();
             this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonActualizar = new System.Windows.Forms.Button();
+            this.buttonTodos = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonActualizar = new System.Windows.Forms.Button();
             this.groupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.personaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personaBindingSource)).BeginInit();
@@ -65,6 +66,7 @@
             // 
             // groupBoxDatos
             // 
+            this.groupBoxDatos.Controls.Add(this.buttonTodos);
             this.groupBoxDatos.Controls.Add(this.buttonActualizar);
             this.groupBoxDatos.Controls.Add(this.buttonEliminar);
             this.groupBoxDatos.Controls.Add(this.buttonBuscar);
@@ -181,6 +183,26 @@
             this.buttonEliminar.UseVisualStyleBackColor = true;
             this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
+            // buttonActualizar
+            // 
+            this.buttonActualizar.Location = new System.Drawing.Point(135, 257);
+            this.buttonActualizar.Name = "buttonActualizar";
+            this.buttonActualizar.Size = new System.Drawing.Size(95, 34);
+            this.buttonActualizar.TabIndex = 9;
+            this.buttonActualizar.Text = "Actualizar";
+            this.buttonActualizar.UseVisualStyleBackColor = true;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
+            // 
+            // buttonTodos
+            // 
+            this.buttonTodos.Location = new System.Drawing.Point(16, 324);
+            this.buttonTodos.Name = "buttonTodos";
+            this.buttonTodos.Size = new System.Drawing.Size(214, 34);
+            this.buttonTodos.TabIndex = 10;
+            this.buttonTodos.Text = "Mostar Todos";
+            this.buttonTodos.UseVisualStyleBackColor = true;
+            this.buttonTodos.Click += new System.EventHandler(this.buttonTodos_Click);
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
@@ -212,16 +234,6 @@
             // personaBindingSource
             // 
             this.personaBindingSource.DataSource = typeof(PracticaDB_GrafMult.Persona);
-            // 
-            // buttonActualizar
-            // 
-            this.buttonActualizar.Location = new System.Drawing.Point(135, 257);
-            this.buttonActualizar.Name = "buttonActualizar";
-            this.buttonActualizar.Size = new System.Drawing.Size(95, 34);
-            this.buttonActualizar.TabIndex = 9;
-            this.buttonActualizar.Text = "Actualizar";
-            this.buttonActualizar.UseVisualStyleBackColor = true;
-            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
             // 
             // Form
             // 
@@ -262,6 +274,7 @@
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Button buttonEliminar;
         private System.Windows.Forms.Button buttonActualizar;
+        private System.Windows.Forms.Button buttonTodos;
     }
 }
 

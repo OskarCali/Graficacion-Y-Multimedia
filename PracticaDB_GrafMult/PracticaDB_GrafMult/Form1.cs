@@ -115,5 +115,10 @@ namespace PracticaDB_GrafMult
                     MessageBoxIcon.Error);
             }
         }
+
+        private void buttonTodos_Click(object sender, EventArgs e)
+        {
+            personaDataGridView.DataSource = DataBase.Cargar();
+        }
     }
 }
