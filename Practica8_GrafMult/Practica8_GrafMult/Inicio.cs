@@ -28,5 +28,11 @@ namespace Practica8_GrafMult
             FormReproductor reproductor = new FormReproductor();
             reproductor.ShowDialog(this);
         }
+
+        private void buttonPDF_Click(object sender, EventArgs e)
+        {
+            FormPDF pdf = new FormPDF();
+            pdf.ShowDialog(this);
+        }
     }
 }

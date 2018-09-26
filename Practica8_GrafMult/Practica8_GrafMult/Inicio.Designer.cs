@@ -30,7 +30,7 @@
         {
             this.buttonGaleria = new System.Windows.Forms.Button();
             this.buttonReproductor = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonPDF = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -55,14 +55,15 @@
             this.buttonReproductor.UseVisualStyleBackColor = true;
             this.buttonReproductor.Click += new System.EventHandler(this.buttonReproductor_Click);
             // 
-            // button3
+            // buttonPDF
             // 
-            this.button3.Location = new System.Drawing.Point(90, 236);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 82);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Lector PDF";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonPDF.Location = new System.Drawing.Point(90, 236);
+            this.buttonPDF.Name = "buttonPDF";
+            this.buttonPDF.Size = new System.Drawing.Size(122, 82);
+            this.buttonPDF.TabIndex = 2;
+            this.buttonPDF.Text = "Lector PDF";
+            this.buttonPDF.UseVisualStyleBackColor = true;
+            this.buttonPDF.Click += new System.EventHandler(this.buttonPDF_Click);
             // 
             // button4
             // 
@@ -91,7 +92,7 @@
             this.ClientSize = new System.Drawing.Size(521, 391);
             this.Controls.Add(this.labelTitulo);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonPDF);
             this.Controls.Add(this.buttonReproductor);
             this.Controls.Add(this.buttonGaleria);
             this.Name = "FormInicio";
@@ -105,7 +106,7 @@
 
         private System.Windows.Forms.Button buttonGaleria;
         private System.Windows.Forms.Button buttonReproductor;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonPDF;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label labelTitulo;
     }
