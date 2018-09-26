@@ -16,5 +16,11 @@ namespace Practica8_GrafMult
         {
             InitializeComponent();
         }
+
+        private void buttonGaleria_Click(object sender, EventArgs e)
+        {
+            FormGaleria galeria = new FormGaleria();
+            galeria.ShowDialog(this);
+        }
     }
 }
