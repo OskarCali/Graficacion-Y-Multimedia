@@ -34,5 +34,14 @@ namespace Practica8_GrafMult
             FormPDF pdf = new FormPDF();
             pdf.ShowDialog(this);
         }
+
+        private void buttonAcerca_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "La graficacion y multimedia son importantes ya que estas nos ayudan a comprender mejor " +
+                "y de una manera mas facil algunas cosas.\n\nSe pueden tener varios elementos de apoyo como lo son:" +
+                "\n• Imagenes\t• Videos\n• Textos\t\t• Hipervinculos\n• Etc...", "Acerca de...", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
     }
 }

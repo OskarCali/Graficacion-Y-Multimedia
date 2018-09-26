@@ -31,7 +31,7 @@
             this.buttonGaleria = new System.Windows.Forms.Button();
             this.buttonReproductor = new System.Windows.Forms.Button();
             this.buttonPDF = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonAcerca = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -65,14 +65,15 @@
             this.buttonPDF.UseVisualStyleBackColor = true;
             this.buttonPDF.Click += new System.EventHandler(this.buttonPDF_Click);
             // 
-            // button4
+            // buttonAcerca
             // 
-            this.button4.Location = new System.Drawing.Point(308, 236);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 82);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Acerca de...";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonAcerca.Location = new System.Drawing.Point(308, 236);
+            this.buttonAcerca.Name = "buttonAcerca";
+            this.buttonAcerca.Size = new System.Drawing.Size(122, 82);
+            this.buttonAcerca.TabIndex = 3;
+            this.buttonAcerca.Text = "Acerca de...";
+            this.buttonAcerca.UseVisualStyleBackColor = true;
+            this.buttonAcerca.Click += new System.EventHandler(this.buttonAcerca_Click);
             // 
             // labelTitulo
             // 
@@ -91,7 +92,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(521, 391);
             this.Controls.Add(this.labelTitulo);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonAcerca);
             this.Controls.Add(this.buttonPDF);
             this.Controls.Add(this.buttonReproductor);
             this.Controls.Add(this.buttonGaleria);
@@ -107,7 +108,7 @@
         private System.Windows.Forms.Button buttonGaleria;
         private System.Windows.Forms.Button buttonReproductor;
         private System.Windows.Forms.Button buttonPDF;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonAcerca;
         private System.Windows.Forms.Label labelTitulo;
     }
 }
