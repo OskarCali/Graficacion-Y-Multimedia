@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonGaleria = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonReproductor = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
@@ -45,14 +45,15 @@
             this.buttonGaleria.UseVisualStyleBackColor = true;
             this.buttonGaleria.Click += new System.EventHandler(this.buttonGaleria_Click);
             // 
-            // button2
+            // buttonReproductor
             // 
-            this.button2.Location = new System.Drawing.Point(308, 101);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 82);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Reproductor";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonReproductor.Location = new System.Drawing.Point(308, 101);
+            this.buttonReproductor.Name = "buttonReproductor";
+            this.buttonReproductor.Size = new System.Drawing.Size(122, 82);
+            this.buttonReproductor.TabIndex = 1;
+            this.buttonReproductor.Text = "Reproductor";
+            this.buttonReproductor.UseVisualStyleBackColor = true;
+            this.buttonReproductor.Click += new System.EventHandler(this.buttonReproductor_Click);
             // 
             // button3
             // 
@@ -91,7 +92,7 @@
             this.Controls.Add(this.labelTitulo);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonReproductor);
             this.Controls.Add(this.buttonGaleria);
             this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -103,7 +104,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonGaleria;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonReproductor;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label labelTitulo;

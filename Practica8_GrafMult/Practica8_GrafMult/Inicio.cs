@@ -22,5 +22,11 @@ namespace Practica8_GrafMult
             FormGaleria galeria = new FormGaleria();
             galeria.ShowDialog(this);
         }
+
+        private void buttonReproductor_Click(object sender, EventArgs e)
+        {
+            FormReproductor reproductor = new FormReproductor();
+            reproductor.ShowDialog(this);
+        }
     }
 }
