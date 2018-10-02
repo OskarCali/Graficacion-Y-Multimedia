@@ -28,77 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonGaleria = new System.Windows.Forms.Button();
-            this.buttonReproductor = new System.Windows.Forms.Button();
-            this.buttonPDF = new System.Windows.Forms.Button();
-            this.buttonAcerca = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
+            this.buttonAcerca = new System.Windows.Forms.Button();
+            this.buttonPDF = new System.Windows.Forms.Button();
+            this.buttonReproductor = new System.Windows.Forms.Button();
+            this.buttonGaleria = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // buttonGaleria
+            // labelTitulo
             // 
-            this.buttonGaleria.Location = new System.Drawing.Point(90, 101);
-            this.buttonGaleria.Name = "buttonGaleria";
-            this.buttonGaleria.Size = new System.Drawing.Size(122, 82);
-            this.buttonGaleria.TabIndex = 0;
-            this.buttonGaleria.Text = "Galeria De Imagenes";
-            this.buttonGaleria.UseVisualStyleBackColor = true;
-            this.buttonGaleria.Click += new System.EventHandler(this.buttonGaleria_Click);
-            // 
-            // buttonReproductor
-            // 
-            this.buttonReproductor.Location = new System.Drawing.Point(308, 101);
-            this.buttonReproductor.Name = "buttonReproductor";
-            this.buttonReproductor.Size = new System.Drawing.Size(122, 82);
-            this.buttonReproductor.TabIndex = 1;
-            this.buttonReproductor.Text = "Reproductor";
-            this.buttonReproductor.UseVisualStyleBackColor = true;
-            this.buttonReproductor.Click += new System.EventHandler(this.buttonReproductor_Click);
-            // 
-            // buttonPDF
-            // 
-            this.buttonPDF.Location = new System.Drawing.Point(90, 236);
-            this.buttonPDF.Name = "buttonPDF";
-            this.buttonPDF.Size = new System.Drawing.Size(122, 82);
-            this.buttonPDF.TabIndex = 2;
-            this.buttonPDF.Text = "Lector PDF";
-            this.buttonPDF.UseVisualStyleBackColor = true;
-            this.buttonPDF.Click += new System.EventHandler(this.buttonPDF_Click);
+            this.labelTitulo.BackColor = System.Drawing.Color.SkyBlue;
+            this.labelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelTitulo.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitulo.Location = new System.Drawing.Point(0, 0);
+            this.labelTitulo.Name = "labelTitulo";
+            this.labelTitulo.Size = new System.Drawing.Size(522, 53);
+            this.labelTitulo.TabIndex = 4;
+            this.labelTitulo.Text = "Practica Integradora";
+            this.labelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonAcerca
             // 
-            this.buttonAcerca.Location = new System.Drawing.Point(308, 236);
+            this.buttonAcerca.BackgroundImage = global::Practica8_GrafMult.Properties.Resources.Acerca_de;
+            this.buttonAcerca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonAcerca.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonAcerca.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonAcerca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAcerca.Location = new System.Drawing.Point(300, 237);
             this.buttonAcerca.Name = "buttonAcerca";
-            this.buttonAcerca.Size = new System.Drawing.Size(122, 82);
+            this.buttonAcerca.Size = new System.Drawing.Size(130, 120);
             this.buttonAcerca.TabIndex = 3;
             this.buttonAcerca.Text = "Acerca de...";
             this.buttonAcerca.UseVisualStyleBackColor = true;
             this.buttonAcerca.Click += new System.EventHandler(this.buttonAcerca_Click);
             // 
-            // labelTitulo
+            // buttonPDF
             // 
-            this.labelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelTitulo.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitulo.Location = new System.Drawing.Point(0, 0);
-            this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(521, 53);
-            this.labelTitulo.TabIndex = 4;
-            this.labelTitulo.Text = "Practica Integradora";
-            this.labelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonPDF.BackgroundImage = global::Practica8_GrafMult.Properties.Resources.Lector;
+            this.buttonPDF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonPDF.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonPDF.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPDF.Location = new System.Drawing.Point(86, 237);
+            this.buttonPDF.Name = "buttonPDF";
+            this.buttonPDF.Size = new System.Drawing.Size(130, 120);
+            this.buttonPDF.TabIndex = 2;
+            this.buttonPDF.Text = "Lector PDF";
+            this.buttonPDF.UseVisualStyleBackColor = true;
+            this.buttonPDF.Click += new System.EventHandler(this.buttonPDF_Click);
+            // 
+            // buttonReproductor
+            // 
+            this.buttonReproductor.BackgroundImage = global::Practica8_GrafMult.Properties.Resources.reproductor;
+            this.buttonReproductor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonReproductor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonReproductor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonReproductor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReproductor.Location = new System.Drawing.Point(300, 82);
+            this.buttonReproductor.Name = "buttonReproductor";
+            this.buttonReproductor.Size = new System.Drawing.Size(130, 120);
+            this.buttonReproductor.TabIndex = 1;
+            this.buttonReproductor.Text = "Reproductor";
+            this.buttonReproductor.UseVisualStyleBackColor = true;
+            this.buttonReproductor.Click += new System.EventHandler(this.buttonReproductor_Click);
+            // 
+            // buttonGaleria
+            // 
+            this.buttonGaleria.BackgroundImage = global::Practica8_GrafMult.Properties.Resources.Galeria;
+            this.buttonGaleria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonGaleria.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonGaleria.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonGaleria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGaleria.Location = new System.Drawing.Point(86, 82);
+            this.buttonGaleria.Name = "buttonGaleria";
+            this.buttonGaleria.Size = new System.Drawing.Size(130, 120);
+            this.buttonGaleria.TabIndex = 0;
+            this.buttonGaleria.Text = "Galeria De Imagenes";
+            this.buttonGaleria.UseVisualStyleBackColor = true;
+            this.buttonGaleria.Click += new System.EventHandler(this.buttonGaleria_Click);
             // 
             // FormInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 391);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(522, 393);
             this.Controls.Add(this.labelTitulo);
             this.Controls.Add(this.buttonAcerca);
             this.Controls.Add(this.buttonPDF);
             this.Controls.Add(this.buttonReproductor);
             this.Controls.Add(this.buttonGaleria);
+            this.MaximumSize = new System.Drawing.Size(540, 440);
+            this.MinimumSize = new System.Drawing.Size(540, 440);
             this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.FormInicio_Load);
             this.ResumeLayout(false);
 
         }
