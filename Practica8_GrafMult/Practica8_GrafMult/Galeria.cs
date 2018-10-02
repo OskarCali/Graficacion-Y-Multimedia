@@ -23,6 +23,13 @@ namespace Practica8_GrafMult
 
         private void FormGaleria_Load(object sender, EventArgs e)
         {
+            buttonOtra.Text = "";
+            buttonPresentacion.Text = "";
+
+            aleatorio();
+            MessageBox.Show("Por defecto se inicia en modo Presentacion", "Presentacion", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
             timerPresentacion.Interval = 10000;
             Presentacion();
         }
