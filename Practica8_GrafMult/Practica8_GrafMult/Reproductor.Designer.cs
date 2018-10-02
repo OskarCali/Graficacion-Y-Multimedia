@@ -41,26 +41,29 @@
             // 
             // groupBoxBotones
             // 
+            this.groupBoxBotones.BackColor = System.Drawing.Color.LightBlue;
             this.groupBoxBotones.Controls.Add(this.buttonPlayPause);
             this.groupBoxBotones.Controls.Add(this.buttonStop);
             this.groupBoxBotones.Controls.Add(this.buttonAbrir);
             this.groupBoxBotones.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBoxBotones.Location = new System.Drawing.Point(0, 48);
             this.groupBoxBotones.Name = "groupBoxBotones";
-            this.groupBoxBotones.Size = new System.Drawing.Size(150, 402);
+            this.groupBoxBotones.Size = new System.Drawing.Size(129, 402);
             this.groupBoxBotones.TabIndex = 4;
             this.groupBoxBotones.TabStop = false;
             // 
             // buttonPlayPause
             // 
+            this.buttonPlayPause.BackgroundImage = global::Practica8_GrafMult.Properties.Resources.play;
             this.buttonPlayPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonPlayPause.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonPlayPause.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buttonPlayPause.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
+            this.buttonPlayPause.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonPlayPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlayPause.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlayPause.Location = new System.Drawing.Point(12, 119);
+            this.buttonPlayPause.Location = new System.Drawing.Point(3, 218);
             this.buttonPlayPause.Name = "buttonPlayPause";
-            this.buttonPlayPause.Size = new System.Drawing.Size(109, 78);
+            this.buttonPlayPause.Size = new System.Drawing.Size(123, 100);
             this.buttonPlayPause.TabIndex = 4;
             this.buttonPlayPause.Text = "PLAY/PAUSE";
             this.buttonPlayPause.UseVisualStyleBackColor = true;
@@ -68,13 +71,15 @@
             // 
             // buttonStop
             // 
+            this.buttonStop.BackgroundImage = global::Practica8_GrafMult.Properties.Resources.stop;
             this.buttonStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonStop.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonStop.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStop.Font = new System.Drawing.Font("Century", 13.8F);
-            this.buttonStop.Location = new System.Drawing.Point(38, 235);
+            this.buttonStop.Location = new System.Drawing.Point(3, 118);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(106, 71);
+            this.buttonStop.Size = new System.Drawing.Size(123, 100);
             this.buttonStop.TabIndex = 5;
             this.buttonStop.Text = "STOP";
             this.buttonStop.UseVisualStyleBackColor = true;
@@ -82,10 +87,15 @@
             // 
             // buttonAbrir
             // 
+            this.buttonAbrir.BackgroundImage = global::Practica8_GrafMult.Properties.Resources.Abrir;
+            this.buttonAbrir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonAbrir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAbrir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonAbrir.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAbrir.Location = new System.Drawing.Point(3, 18);
             this.buttonAbrir.Name = "buttonAbrir";
-            this.buttonAbrir.Size = new System.Drawing.Size(144, 55);
+            this.buttonAbrir.Size = new System.Drawing.Size(123, 100);
             this.buttonAbrir.TabIndex = 0;
             this.buttonAbrir.Text = "ABRIR";
             this.buttonAbrir.UseVisualStyleBackColor = true;
@@ -93,6 +103,7 @@
             // 
             // labelTitulo
             // 
+            this.labelTitulo.BackColor = System.Drawing.Color.SkyBlue;
             this.labelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelTitulo.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitulo.Location = new System.Drawing.Point(0, 0);
@@ -106,10 +117,10 @@
             // 
             this.mediaPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mediaPlayer.Enabled = true;
-            this.mediaPlayer.Location = new System.Drawing.Point(150, 48);
+            this.mediaPlayer.Location = new System.Drawing.Point(129, 48);
             this.mediaPlayer.Name = "mediaPlayer";
             this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
-            this.mediaPlayer.Size = new System.Drawing.Size(650, 402);
+            this.mediaPlayer.Size = new System.Drawing.Size(671, 402);
             this.mediaPlayer.TabIndex = 5;
             this.mediaPlayer.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.mediaPlayer_PlayStateChange);
             // 
@@ -122,6 +133,7 @@
             this.Controls.Add(this.groupBoxBotones);
             this.Controls.Add(this.labelTitulo);
             this.Name = "FormReproductor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Reproductor";
             this.Load += new System.EventHandler(this.FormReproductor_Load);
             this.groupBoxBotones.ResumeLayout(false);

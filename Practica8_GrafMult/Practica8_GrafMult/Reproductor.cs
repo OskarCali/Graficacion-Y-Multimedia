@@ -27,14 +27,25 @@ namespace Practica8_GrafMult
             file.Filter = "Archivo MP4 (*.mp4) |*.mp4";
             file.ShowDialog();
 
-            mediaPlayer.URL = file.FileName;
-            mediaPlayer.Ctlcontrols.play();
+            if (file.FileName != "")
+            {
+                mediaPlayer.URL = file.FileName;
+                mediaPlayer.Ctlcontrols.play();
+
+                buttonStop.Visible = true;
+                buttonPlayPause.Visible = true;
+            }
         }
 
         private void FormReproductor_Load(object sender, EventArgs e)
         {
+            buttonAbrir.Text = "";
             buttonPlayPause.Text = "";
             buttonStop.Text = "";
+            buttonStop.Visible = false;
+            buttonPlayPause.Visible = false;
+            buttonAbrir.BackgroundImage = Resources.Abrir;
+            buttonStop.BackgroundImage = Resources.stop;
         }
 
         private void buttonPlayPause_Click(object sender, EventArgs e)
