@@ -143,7 +143,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Galeria.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pause.png" />
   </ItemGroup>
@@ -227,6 +229,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reproductor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acerca de.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abrir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
