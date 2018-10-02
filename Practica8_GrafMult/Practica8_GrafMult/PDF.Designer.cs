@@ -39,31 +39,38 @@
             // 
             // labelTitulo
             // 
+            this.labelTitulo.BackColor = System.Drawing.Color.SkyBlue;
             this.labelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelTitulo.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitulo.Location = new System.Drawing.Point(0, 0);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(800, 48);
+            this.labelTitulo.Size = new System.Drawing.Size(637, 48);
             this.labelTitulo.TabIndex = 5;
             this.labelTitulo.Text = "Practica PDF";
             this.labelTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBoxBotones
             // 
+            this.groupBoxBotones.BackColor = System.Drawing.Color.LightBlue;
             this.groupBoxBotones.Controls.Add(this.buttonAbrir);
             this.groupBoxBotones.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBoxBotones.Location = new System.Drawing.Point(0, 48);
             this.groupBoxBotones.Name = "groupBoxBotones";
-            this.groupBoxBotones.Size = new System.Drawing.Size(151, 402);
+            this.groupBoxBotones.Size = new System.Drawing.Size(151, 505);
             this.groupBoxBotones.TabIndex = 6;
             this.groupBoxBotones.TabStop = false;
             // 
             // buttonAbrir
             // 
+            this.buttonAbrir.BackgroundImage = global::Practica8_GrafMult.Properties.Resources.Abrir;
+            this.buttonAbrir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonAbrir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonAbrir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonAbrir.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAbrir.Location = new System.Drawing.Point(3, 18);
             this.buttonAbrir.Name = "buttonAbrir";
-            this.buttonAbrir.Size = new System.Drawing.Size(145, 55);
+            this.buttonAbrir.Size = new System.Drawing.Size(145, 100);
             this.buttonAbrir.TabIndex = 1;
             this.buttonAbrir.Text = "ABRIR";
             this.buttonAbrir.UseVisualStyleBackColor = true;
@@ -76,18 +83,20 @@
             this.acrobatReader.Location = new System.Drawing.Point(151, 48);
             this.acrobatReader.Name = "acrobatReader";
             this.acrobatReader.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("acrobatReader.OcxState")));
-            this.acrobatReader.Size = new System.Drawing.Size(649, 402);
+            this.acrobatReader.Size = new System.Drawing.Size(486, 505);
             this.acrobatReader.TabIndex = 7;
             // 
             // FormPDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(637, 553);
             this.Controls.Add(this.acrobatReader);
             this.Controls.Add(this.groupBoxBotones);
             this.Controls.Add(this.labelTitulo);
+            this.MinimumSize = new System.Drawing.Size(655, 600);
             this.Name = "FormPDF";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "PDF";
             this.groupBoxBotones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.acrobatReader)).EndInit();
