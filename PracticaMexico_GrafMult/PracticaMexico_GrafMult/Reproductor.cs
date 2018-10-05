@@ -22,6 +22,8 @@ namespace PracticaMexico_GrafMult
 
         private void formReproductor_Load(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
+
             lblNombre.Text = nombre;
             mediaPlayer.URL = url;
             mediaPlayer.Ctlcontrols.play();

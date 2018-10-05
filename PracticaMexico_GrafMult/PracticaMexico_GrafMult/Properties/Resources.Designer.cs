@@ -293,6 +293,16 @@ namespace PracticaMexico_GrafMult.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MaxMin {
+            get {
+                object obj = ResourceManager.GetObject("MaxMin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mexico {
             get {
                 object obj = ResourceManager.GetObject("Mexico", resourceCulture);

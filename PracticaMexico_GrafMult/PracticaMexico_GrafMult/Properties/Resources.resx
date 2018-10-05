@@ -121,11 +121,17 @@
   <data name="Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Presentacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Presentacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\03.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Peligro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Peligro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Galeria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Galeria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -135,6 +141,9 @@
   </data>
   <data name="05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sonido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sonido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +174,9 @@
   </data>
   <data name="Selva01_Chimpance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Selva01_Chimpance.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Question" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Question.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,16 +220,7 @@
   <data name="Mar02_Totoaba" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mar02_Totoaba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sonido" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sonido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Galeria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Galeria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Presentacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Presentacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MaxMin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaxMin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

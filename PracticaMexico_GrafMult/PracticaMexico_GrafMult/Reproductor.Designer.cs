@@ -43,6 +43,7 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblNombre.Font = new System.Drawing.Font("Century", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblNombre.Location = new System.Drawing.Point(0, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(750, 66);
@@ -63,8 +64,9 @@
             // picBoxMaxMin
             // 
             this.picBoxMaxMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picBoxMaxMin.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.picBoxMaxMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picBoxMaxMin.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxMaxMin.BackgroundImage = global::PracticaMexico_GrafMult.Properties.Resources.MaxMin;
+            this.picBoxMaxMin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picBoxMaxMin.Location = new System.Drawing.Point(700, 0);
             this.picBoxMaxMin.Name = "picBoxMaxMin";
             this.picBoxMaxMin.Size = new System.Drawing.Size(50, 50);
@@ -74,7 +76,7 @@
             // 
             // picBoxRegresar
             // 
-            this.picBoxRegresar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.picBoxRegresar.BackColor = System.Drawing.Color.Transparent;
             this.picBoxRegresar.BackgroundImage = global::PracticaMexico_GrafMult.Properties.Resources.Back;
             this.picBoxRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBoxRegresar.Location = new System.Drawing.Point(0, 0);
@@ -88,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PracticaMexico_GrafMult.Properties.Resources.Mexico;
+            this.BackgroundImage = global::PracticaMexico_GrafMult.Properties.Resources._01;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(750, 600);
             this.Controls.Add(this.picBoxRegresar);
