@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0E1A887-6519-4AA2-BB17-2F6F6B277CA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PracticaMexico_GrafMult</RootNamespace>
+    <AssemblyName>PracticaMexico_GrafMult</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Animal.cs" />
+    <Compile Include="Desierto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desierto.Designer.cs">
+      <DependentUpon>Desierto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalles.Designer.cs">
+      <DependentUpon>Detalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extincion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extincion.Designer.cs">
+      <DependentUpon>Extincion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Galeria.Designer.cs">
+      <DependentUpon>Galeria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marino.Designer.cs">
+      <DependentUpon>Marino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reproductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reproductor.Designer.cs">
+      <DependentUpon>Reproductor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selva.Designer.cs">
+      <DependentUpon>Selva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desierto.resx">
+      <DependentUpon>Desierto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalles.resx">
+      <DependentUpon>Detalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extincion.resx">
+      <DependentUpon>Extincion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Galeria.resx">
+      <DependentUpon>Galeria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marino.resx">
+      <DependentUpon>Marino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reproductor.resx">
+      <DependentUpon>Reproductor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selva.resx">
+      <DependentUpon>Selva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mexico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desierto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peligro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PeligroFondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ext01_LoboGris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ext02_Ocelote.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ext03_PerritoPradera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ext04_VaquitaMarina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Des01_Conejo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Des02_Correcaminos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Des03_Coyote.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Des04_Serpiente.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mar01_Calamar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mar02_Totoaba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mar03_Vaquita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mar04_Tortuga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selva01_Chimpance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selva02_Hipopotamo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selva03_Jaguar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selva04_Pantera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sonido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galeria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentacion.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
