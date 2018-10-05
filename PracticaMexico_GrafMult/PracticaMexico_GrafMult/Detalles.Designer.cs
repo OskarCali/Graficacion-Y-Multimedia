@@ -35,6 +35,8 @@
             this.acrobatReader = new AxAcroPDFLib.AxAcroPDF();
             this.picBoxAnimal = new System.Windows.Forms.PictureBox();
             this.btnPDFImagen = new System.Windows.Forms.Button();
+            this.btnSonido = new System.Windows.Forms.Button();
+            this.btnVideo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxRegresar)).BeginInit();
             this.grpBoxBotones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.acrobatReader)).BeginInit();
@@ -51,6 +53,7 @@
             this.picBoxRegresar.Size = new System.Drawing.Size(70, 50);
             this.picBoxRegresar.TabIndex = 5;
             this.picBoxRegresar.TabStop = false;
+            this.picBoxRegresar.Click += new System.EventHandler(this.picBoxRegresar_Click);
             // 
             // lblNombre
             // 
@@ -68,6 +71,8 @@
             // grpBoxBotones
             // 
             this.grpBoxBotones.BackColor = System.Drawing.Color.Gray;
+            this.grpBoxBotones.Controls.Add(this.btnVideo);
+            this.grpBoxBotones.Controls.Add(this.btnSonido);
             this.grpBoxBotones.Controls.Add(this.btnPDFImagen);
             this.grpBoxBotones.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.grpBoxBotones.Location = new System.Drawing.Point(0, 605);
@@ -112,6 +117,42 @@
             this.btnPDFImagen.TabIndex = 0;
             this.btnPDFImagen.Text = "INFORMACION";
             this.btnPDFImagen.UseVisualStyleBackColor = false;
+            this.btnPDFImagen.Click += new System.EventHandler(this.btnPDFImagen_Click);
+            // 
+            // btnSonido
+            // 
+            this.btnSonido.BackColor = System.Drawing.Color.Transparent;
+            this.btnSonido.BackgroundImage = global::PracticaMexico_GrafMult.Properties.Resources.Sonido;
+            this.btnSonido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSonido.FlatAppearance.BorderSize = 0;
+            this.btnSonido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSonido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSonido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSonido.Location = new System.Drawing.Point(341, 21);
+            this.btnSonido.Name = "btnSonido";
+            this.btnSonido.Size = new System.Drawing.Size(219, 118);
+            this.btnSonido.TabIndex = 1;
+            this.btnSonido.Text = "SONIDO";
+            this.btnSonido.UseVisualStyleBackColor = false;
+            this.btnSonido.Click += new System.EventHandler(this.btnSonido_Click);
+            // 
+            // btnVideo
+            // 
+            this.btnVideo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVideo.BackColor = System.Drawing.Color.Transparent;
+            this.btnVideo.BackgroundImage = global::PracticaMexico_GrafMult.Properties.Resources.Presentacion;
+            this.btnVideo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVideo.FlatAppearance.BorderSize = 0;
+            this.btnVideo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnVideo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVideo.Location = new System.Drawing.Point(669, 21);
+            this.btnVideo.Name = "btnVideo";
+            this.btnVideo.Size = new System.Drawing.Size(219, 118);
+            this.btnVideo.TabIndex = 2;
+            this.btnVideo.Text = "VIDEO";
+            this.btnVideo.UseVisualStyleBackColor = false;
+            this.btnVideo.Click += new System.EventHandler(this.btnVideo_Click);
             // 
             // formDetalles
             // 
@@ -129,6 +170,7 @@
             this.Name = "formDetalles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Detalles";
+            this.Load += new System.EventHandler(this.formDetalles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxRegresar)).EndInit();
             this.grpBoxBotones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.acrobatReader)).EndInit();
@@ -145,5 +187,7 @@
         private System.Windows.Forms.Button btnPDFImagen;
         private AxAcroPDFLib.AxAcroPDF acrobatReader;
         private System.Windows.Forms.PictureBox picBoxAnimal;
+        private System.Windows.Forms.Button btnVideo;
+        private System.Windows.Forms.Button btnSonido;
     }
 }
